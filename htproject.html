@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-    <title>css</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse</title>
 </head>
-    <h1>adding makeup . YAY !</h1>
+<body>
+
+
+    <h1 style="text-align: center;">Reveres string in real time</h1>
+
+    <input type="text" id="Reverse" onkeyup="reverse()">
+    <input type="text" id="showData">
+
+
+
+
+
+
+
+
+    <script>
+
+        function reverse(){
+            var str = document.getElementById('Reverse').value;
+            var newstring=" ";
+            for(var i = str.length-1;i>=0;i--){
+                newstring += str[i];
+            }
+            document.getElementById('showData').value = newstring;
+        }
+    </script>
     
 </body>
-</html> 
+</html>
